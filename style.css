@@ -99,9 +99,25 @@ p {
 .yoga-img {
   max-width: 100%;
 }
+.yogurt-image,
+.weather-image,
+.yoga-image {
+  max-width: 100%;
+}
 button {
   box-shadow: var(--box-shadow);
 }
 .btn-primary {
   background-color: var(--primary-color) !important;
+}
+@media (max-width: 567px) {
+  .yoga-img,
+  .weather-img,
+  .yogurt-img {
+    display: none;
+  }
+  h4 {
+    display: flex;
+    justify-content: center;
+  }
 }
